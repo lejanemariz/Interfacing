@@ -1,0 +1,10 @@
+D:\OneDrive - usjr.edu.ph\1st Sem 21-22\Interfacing\DesktopApp\DeskApp511\bin\Debug\DeskApp511.exe.config
+D:\OneDrive - usjr.edu.ph\1st Sem 21-22\Interfacing\DesktopApp\DeskApp511\bin\Debug\DeskApp511.exe
+D:\OneDrive - usjr.edu.ph\1st Sem 21-22\Interfacing\DesktopApp\DeskApp511\bin\Debug\DeskApp511.pdb
+D:\OneDrive - usjr.edu.ph\1st Sem 21-22\Interfacing\DesktopApp\DeskApp511\obj\Debug\DeskApp511.csproj.AssemblyReference.cache
+D:\OneDrive - usjr.edu.ph\1st Sem 21-22\Interfacing\DesktopApp\DeskApp511\obj\Debug\DeskApp511.Form1.resources
+D:\OneDrive - usjr.edu.ph\1st Sem 21-22\Interfacing\DesktopApp\DeskApp511\obj\Debug\DeskApp511.Properties.Resources.resources
+D:\OneDrive - usjr.edu.ph\1st Sem 21-22\Interfacing\DesktopApp\DeskApp511\obj\Debug\DeskApp511.csproj.GenerateResource.cache
+D:\OneDrive - usjr.edu.ph\1st Sem 21-22\Interfacing\DesktopApp\DeskApp511\obj\Debug\DeskApp511.csproj.CoreCompileInputs.cache
+D:\OneDrive - usjr.edu.ph\1st Sem 21-22\Interfacing\DesktopApp\DeskApp511\obj\Debug\DeskApp511.exe
+D:\OneDrive - usjr.edu.ph\1st Sem 21-22\Interfacing\DesktopApp\DeskApp511\obj\Debug\DeskApp511.pdb
