@@ -22,6 +22,7 @@ namespace DeskApp511
         {
             GroupIntitialize(false);
         }
+
         private void GroupIntitialize(bool checkOn)
         {
             if (checkOn == false)
@@ -72,7 +73,6 @@ namespace DeskApp511
             {
                 Console.WriteLine(port);
             }
-
             try
             {
                 comboPorts.Items.AddRange(ports);
@@ -80,7 +80,6 @@ namespace DeskApp511
                 serialPort1.ReadTimeout = (2000);
                 serialPort1.WriteTimeout = (2000);
             }
-
             catch { MessageBox.Show("No Ports Found!"); }
         }
 
@@ -308,14 +307,17 @@ namespace DeskApp511
         {
             serialPort1.Write("U");
         }
+
         private void Btn_counterDown_Click(object sender, EventArgs e)
         {
             serialPort1.Write("D");
         }
+
         private void Btn_buzz_Click(object sender, EventArgs e)
         {
             serialPort1.Write("Z");
         }
+
         private void Btn_motorClkwise_Click(object sender, EventArgs e)
         {
             serialPort1.Write("L");
@@ -329,35 +331,64 @@ namespace DeskApp511
         private void serialPort1_DataReceived(object sender, SerialDataReceivedEventArgs e)
         {
             str = serialPort1.ReadExisting();
-            this.Invoke(new EventHandler(readData));
-            
+            this.Invoke(new EventHandler(readData));       
         }
+
         int i = 0;
         private void readData(object sender, EventArgs e)
         {
             if (str == "R")
             {
+                //q = true;
+                //start();
                 i = 1;
                 timer1.Start();
             }
             else if (str == "G")
             {
+                //w = true;
                 i = 2;
                 timer1.Start();
             }
             else if (str == "B")
             {
+                //z = true;
                 i = 3;
                 timer1.Start();
             }
         }
+        //bool q = false;
+        //bool w = false;
+        //bool z = false;
 
-        double x = 0;
+        double x =  0;
+
+        //public void start()
+        //{
+        //    if (q == true)
+        //    {
+        //        while (q == true)
+        //        {
+        //            btn_DispRed.BackColor = Color.Red;
+        //        }
+        //        q = false;
+        //        btn_DispRed.BackColor = Color.White;
+        //    }
+        //}
+
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if(i == 1)
+            if (i == 1)
             {
-                if (x == 4000)
+                //while (x != 0)
+                //{
+                //    x += Convert.ToDouble(timer1.Interval);
+                //    btn_DispRed.BackColor = Color.Red;
+                //}
+                //x = 0;
+                //btn_DispRed.BackColor = Color.White;
+                //if (x == 1000)
+                if (x == 1000)
                 {
                     x = 0;
                     timer1.Stop();
@@ -375,9 +406,10 @@ namespace DeskApp511
                     }
                 }
             }
-            else if(i == 2)
+            else if (i == 2)
             {
-                if (x == 4000)
+                //if (x == 1000)
+                if (x == 1000)
                 {
                     x = 0;
                     timer1.Stop();
@@ -397,7 +429,8 @@ namespace DeskApp511
             }
             else if (i == 3)
             {
-                if (x == 4000)
+                //if (x == 1000)
+                if (x == 1000)
                 {
                     x = 0;
                     timer1.Stop();
